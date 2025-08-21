@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -132,6 +133,19 @@
         Game {
             label = "Game";
             display-name = "Game";
+            bindings = <
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &kp Q   &kp W   &kp E   &kp R     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHIFT  &kp A   &kp S   &kp D   &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &to 0
+                            &trans  &trans  &trans    &trans  &trans
+                                    &trans  &trans    &trans
+            >;
+        };
+
+        double-game {
+            label = "double-game";
+            display-name = "double";
             bindings = <
 &trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans      &kp Q   &kp W   &kp E   &kp R     &trans  &trans  &trans  &trans  &trans  &trans
