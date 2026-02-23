@@ -121,24 +121,24 @@
             label = "Raise";
             display-name = "Raise";
             bindings = <
-&out OUT_TOG  &bt BT_CLR  &bt BT_PRV        &bt BT_NXT        &trans             &bootloader    &bootloader  &sys_reset  &trans    &trans    &trans    &trans
-&trans        &trans      &trans            &kp LS(LC(UP))    &trans             &trans         &kp CARET    &kp AMPS    &kp LPAR  &kp RPAR  &trans    &kp DEL
-&trans        &trans      &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LC(LS(RIGHT))  &trans         &kp UNDER    &kp EQUAL   &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&trans        &trans      &trans            &trans            &trans             &trans         &kp MINUS    &kp PLUS    &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                            &trans            &trans             &trans         &trans       &trans
-                                                              &trans             &trans         &trans
+&trans  &out OUT_TOG  &bt BT_CLR        &bt BT_PRV        &bt BT_NXT         &bootloader    &bootloader  &sys_reset  &trans    &trans    &trans    &trans
+&trans  &kp LC(HOME)  &trans            &kp LS(LC(UP))    &trans             &trans         &kp CARET    &kp AMPS    &kp LPAR  &kp RPAR  &trans    &kp DEL
+&trans  &trans        &kp LS(LC(LEFT))  &kp LS(LC(DOWN))  &kp LC(LS(RIGHT))  &trans         &kp UNDER    &kp EQUAL   &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
+&trans  &kp LC(END)   &trans            &trans            &trans             &trans         &kp MINUS    &kp PLUS    &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
+                                        &trans            &trans             &trans         &trans       &trans
+                                                          &trans             &trans         &trans
             >;
         };
 
         Mouse {
             display-name = "Mouse";
             bindings = <
-&kp ESC  &trans  &trans  &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&to 1    &trans  &trans  &mkp MB4   &mkp MB5   &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &mkp MCLK
-                         &mkp LCLK  &kp ENTER  &mkp RCLK    &trans  &trans
-                                    &trans     &trans       &trans
+&kp ESC  &trans  &trans  &trans        &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans        &trans       &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&to 1    &trans  &trans  &mkp MB4      &mkp MB5     &mkp MB1     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &kp LS(HOME)  &kp LS(END)  &trans       &trans  &trans  &trans  &trans  &trans  &mkp MCLK
+                         &mkp LCLK     &kp ENTER    &mkp RCLK    &trans  &trans
+                                       &trans       &trans       &trans
             >;
         };
 
